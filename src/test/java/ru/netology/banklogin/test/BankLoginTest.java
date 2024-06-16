@@ -35,7 +35,7 @@ public class BankLoginTest {
         var verificationPage = loginPage.validLogin(authInfo);
         verificationPage.verifyVerificationPageVisibility();
         var verificationCode = SQLHelper.getVerificationCode();
-        verificationPage.validVerify(verificationCode.getCode());
+        verificationPage.validVerify(verificationCode);
     }
 
     @Test
